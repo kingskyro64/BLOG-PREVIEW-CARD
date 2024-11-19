@@ -1,10 +1,14 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 2rem; text-align: center; }
+.attribution a { color: hsl(0, 0%, 0%); text-decoration: black; }
+.attribution a:hover{
+    color: white;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 1s;
 }
 
 body{
@@ -17,7 +21,7 @@ main{
     padding: 3rem;
     border: 2px solid black;
     max-width: 40rem;
-    margin: 0.5rem 34rem;
+    margin: 1.5rem 34rem;
     border-radius: 2rem;
     box-shadow: 10px 10px;
 }
@@ -58,3 +62,18 @@ main{
     padding-bottom: 0.9;
 }
 
+.prof{
+    /* background-color: blue; */
+}
+
+.person{
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name{
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
