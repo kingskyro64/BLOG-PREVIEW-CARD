@@ -1,69 +1,56 @@
-.attribution { font-size: 2rem; text-align: center; }
-.attribution a { color: hsl(0, 0%, 0%); text-decoration: black; }
-.attribution a:hover{
-    color: white;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 1s;
 }
 
-body{
-    background:  hsl(47, 88%, 63%);
+body {
     font-family: 'Figtree';
+    font-size: 16px; /* Base font size */
+    background-color: hsl(47, 88%, 63%);
 }
 
-main{
-    background:  hsl(0, 0%, 100%);
-    padding: 3rem;
+main {
+    background: hsl(0, 0%, 100%);
+    padding: 2rem;
     border: 2px solid black;
-    max-width: 40rem;
-    margin: 1.5rem 34rem;
     border-radius: 2rem;
     box-shadow: 10px 10px;
+    margin: 2rem auto;
+    max-width: 90%;
+    max-width: 30rem;
 }
 
-.shapes{
+.attribution { font-size: 2rem; text-align: center; }
+
+.attribution a { color: hsl(0, 0%, 0%); text-decoration: black; }
+
+.attribution a:hover{
+
+color: white;
+
+}
+
+.shapes {
     width: 100%;
     border-radius: 2rem;
 }
 
-.p-one{
-    background:  hsl(47, 88%, 63%);
-    max-width: 8rem;
+.p-one {
+    background: hsl(47, 88%, 63%);
     font-weight: 500;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    padding: 2px;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    max-width: 80%;
     text-align: center;
 }
 
-.published-date{
-    font-family: 500;
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.heading-one{
-    font-family: 800;
-    font-size: 1.9rem;
-    padding-top: 0.5;
-    padding-bottom: 0.5;
-}
-
-.text{
-    font-weight: 500;
-    font-size: 1rem;
-    padding-top: 0.5;
-    padding-bottom: 0.9;
-}
-
-.prof{
-    /* background-color: blue; */
+.published-date,
+.heading-one,
+.text,
+.name {
+    font-size: 1.2rem;
 }
 
 .person{
@@ -76,4 +63,23 @@ main{
     padding-top: 1rem;
     font-weight: 500;
     font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .heading-one,
+    .text,
+    .name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .p-one {
+        font-size: 1rem;
+    }
 }
