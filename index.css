@@ -17,7 +17,7 @@ main {
     border: 2px solid black;
     border-radius: 2rem;
     box-shadow: 10px 10px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     max-width: 90%;
     max-width: 30rem;
 }
@@ -35,14 +35,14 @@ color: white;
 .shapes {
     width: 100%;
     border-radius: 2rem;
+    padding: 1rem;
 }
 
 .p-one {
     background: hsl(47, 88%, 63%);
     font-weight: 500;
     font-size: 1.2rem;
-    margin: 1rem auto;
-    max-width: 80%;
+    max-width: 30%;
     text-align: center;
 }
 
@@ -51,6 +51,7 @@ color: white;
 .text,
 .name {
     font-size: 1.2rem;
+    padding: 0.3rem;
 }
 
 .person{
@@ -63,6 +64,10 @@ color: white;
     padding-top: 1rem;
     font-weight: 500;
     font-size: 1.5rem;
+}
+
+.name:hover{
+    color: gold;
 }
 
 /* Media Queries for Responsiveness */
