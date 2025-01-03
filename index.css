@@ -22,7 +22,7 @@ main {
     max-width: 30rem;
 }
 
-.attribution { font-size: 2rem; text-align: center; }
+.attribution { font-size: 20px; text-align: center; }
 
 .attribution a { color: hsl(0, 0%, 0%); text-decoration: black; }
 
@@ -51,7 +51,7 @@ color: white;
 .text,
 .name {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .person{
@@ -73,18 +73,32 @@ color: white;
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 10px;
     }
 
+    .published-date,
     .heading-one,
     .text,
     .name {
         font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    main{
+        max-width: 25rem;
     }
 }
 
 @media (max-width: 480px) {
     .p-one {
         font-size: 1rem;
+    }
+
+    main{
+        max-width: 20rem;
+    }
+
+    .attribution{
+        font-size: 10px;
     }
 }
